@@ -56,6 +56,7 @@
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#hero" class="text-slate-300 hover:text-indigo-400 transition-colors text-sm font-medium">Inicio</a>
                 <a href="#features" class="text-slate-300 hover:text-indigo-400 transition-colors text-sm font-medium">Servicios</a>
+                <a href="#gallery" class="text-slate-300 hover:text-indigo-400 transition-colors text-sm font-medium">Galería</a>
                 <a href="#pricing" class="text-slate-300 hover:text-indigo-400 transition-colors text-sm font-medium">Precios</a>
                 <a href="#faq" class="text-slate-300 hover:text-indigo-400 transition-colors text-sm font-medium">Preguntas</a>
             </div>
@@ -76,6 +77,7 @@
         <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
             <a href="#hero" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Inicio</a>
             <a href="#features" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Servicios</a>
+            <a href="#gallery" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Galería</a>
             <a href="#pricing" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Precios</a>
             <a href="#faq" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Preguntas</a>
             <a href="#pricing" class="block w-full text-center py-3 rounded-xl bg-indigo-600 text-white font-medium">Empezar Ahora</a>
@@ -84,7 +86,6 @@
 
     <!-- Hero Section -->
     <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
-        <!-- Glowing background blobs -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-purple-600/20 rounded-full blur-[100px] pointer-events-none"></div>
 
@@ -110,8 +111,8 @@
                     <a href="#pricing" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-base shadow-lg shadow-indigo-500/30 transition-all transform hover:-translate-y-0.5">
                         Ver Planes y Precios <i class="fa-solid fa-arrow-right ml-2"></i>
                     </a>
-                    <a href="#features" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700/80 text-slate-200 border border-slate-700/80 font-semibold text-base transition-all">
-                        Explorar Funciones
+                    <a href="#gallery" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700/80 text-slate-200 border border-slate-700/80 font-semibold text-base transition-all">
+                        Ver Proyectos
                     </a>
                 </div>
             </div>
@@ -203,8 +204,231 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-slate-900 border-t border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Casos de Éxito & Proyectos</h2>
+                <p class="text-3xl sm:text-5xl font-extrabold text-white">Galería de Chatbots</p>
+                <p class="mt-4 text-slate-400">Explora algunos de nuestros asistentes virtuales desarrollados e integrados para distintas industrias.</p>
+                
+                <!-- Filter Category Buttons -->
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                    <button class="gallery-filter active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-indigo-600 text-white shadow-lg shadow-indigo-500/20" data-filter="all">Todos</button>
+                    <button class="gallery-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700" data-filter="devtools">Git & DevTools</button>
+                    <button class="gallery-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700" data-filter="ecommerce">E-Commerce</button>
+                    <button class="gallery-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700" data-filter="support">Soporte Cliente</button>
+                    <button class="gallery-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700" data-filter="leads">Captación Leads</button>
+                </div>
+            </div>
+
+            <!-- Gallery Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: DevTools / GitHub Bot -->
+                <div class="gallery-item devtools bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center p-4">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
+                            <div class="w-full h-full bg-slate-900 border border-slate-800 rounded-xl p-4 font-mono text-xs text-indigo-300 flex flex-col justify-between shadow-inner">
+                                <div class="flex items-center space-x-2 border-b border-slate-800 pb-2">
+                                    <i class="fa-brands fa-github text-lg text-white"></i>
+                                    <span class="text-white font-bold">GitCommitBot</span>
+                                </div>
+                                <p class="text-slate-400">🤖 PR #142 automerged after passing CI tests. Created deployment release v2.4.0</p>
+                                <span class="text-emerald-400 text-[10px]">● Active Webhook Event</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Git & DevTools</span>
+                                <span class="text-xs text-slate-500"><i class="fa-solid fa-bolt mr-1"></i> GitHub Actions</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">GitHub Actions Notifier Bot</h3>
+                            <p class="text-slate-400 text-sm mb-4">Chatbot para Slack y Discord que notifica Pull Requests, ejecuta pruebas y despliega ambientes automáticos.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/80">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">Node.js</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">GitHub API</span>
+                            <span class="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 text-[11px] font-medium">Webhooks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: E-Commerce Bot -->
+                <div class="gallery-item ecommerce bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center p-4">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
+                            <div class="w-full h-full bg-slate-900 border border-slate-800 rounded-xl p-4 font-sans text-xs text-slate-200 flex flex-col justify-between shadow-inner">
+                                <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+                                    <span class="font-bold text-emerald-400"><i class="fa-brands fa-whatsapp text-sm mr-1"></i> ShopAssistant</span>
+                                    <span class="text-[10px] text-slate-400">10:42 AM</span>
+                                </div>
+                                <div class="bg-emerald-950/40 p-2 rounded border border-emerald-500/20 text-slate-300">
+                                    "Tu pedido #8921 ha sido enviado 🚚. Haz clic aquí para rastrear."
+                                </div>
+                                <span class="text-xs text-slate-400 font-mono">Status: Delivered (WhatsApp API)</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">E-Commerce</span>
+                                <span class="text-xs text-slate-500"><i class="fa-solid fa-cart-shopping mr-1"></i> Shopify</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">WhatsApp Order & Track Bot</h3>
+                            <p class="text-slate-400 text-sm mb-4">Asistente comercial automatizado para Shopify y WooCommerce con respuesta instantánea a pedidos y productos.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/80">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">WhatsApp API</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">OpenAI GPT</span>
+                            <span class="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 text-[11px] font-medium">Shopify</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Support Bot -->
+                <div class="gallery-item support bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center p-4">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
+                            <div class="w-full h-full bg-slate-900 border border-slate-800 rounded-xl p-4 font-mono text-xs text-purple-300 flex flex-col justify-between shadow-inner">
+                                <div class="flex items-center space-x-2 border-b border-slate-800 pb-2">
+                                    <i class="fa-solid fa-headset text-purple-400"></i>
+                                    <span class="text-white font-bold">HelpDesk AI</span>
+                                </div>
+                                <p class="text-slate-300">"He escaneado la base de datos de soporte. Aquí está la solución al error 404..."</p>
+                                <span class="text-purple-400 text-[10px]">99.4% Precisión en respuestas</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Soporte Cliente</span>
+                                <span class="text-xs text-slate-500"><i class="fa-solid fa-file-pdf mr-1"></i> RAG Docs</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">SaaS Support Agent (RAG)</h3>
+                            <p class="text-slate-400 text-sm mb-4">Bot entrenado con archivos PDF, manuales de usuario y bases de conocimiento internas para resolver tickets 24/7.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/80">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">Python</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">LangChain</span>
+                            <span class="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 text-[11px] font-medium">Vector DB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Lead Gen Bot -->
+                <div class="gallery-item leads bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center p-4">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
+                            <div class="w-full h-full bg-slate-900 border border-slate-800 rounded-xl p-4 font-sans text-xs text-slate-200 flex flex-col justify-between shadow-inner">
+                                <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+                                    <span class="font-bold text-pink-400"><i class="fa-solid fa-filter mr-1"></i> LeadQualifier</span>
+                                    <span class="text-[10px] text-emerald-400">Score: 95/100</span>
+                                </div>
+                                <div class="bg-slate-800 p-2 rounded text-slate-300">
+                                    "Lead agendó demo para el Jueves 10:00 AM. Guardado en HubSpot."
+                                </div>
+                                <span class="text-xs text-slate-400 font-mono">Sync Status: Complete</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-bold text-pink-400 uppercase tracking-wider">Captación Leads</span>
+                                <span class="text-xs text-slate-500"><i class="fa-solid fa-calendar mr-1"></i> Calendly Sync</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Lead Qualification & Booking Bot</h3>
+                            <p class="text-slate-400 text-sm mb-4">Filtra clientes potenciales en tu sitio web, califica necesidades y agenda llamadas directamente en tu calendario.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/80">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">HubSpot API</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">Calendly</span>
+                            <span class="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 text-[11px] font-medium">GPT-4 Turbo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: DevTools / Issue Bot -->
+                <div class="gallery-item devtools bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center p-4">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
+                            <div class="w-full h-full bg-slate-900 border border-slate-800 rounded-xl p-4 font-mono text-xs text-emerald-300 flex flex-col justify-between shadow-inner">
+                                <div class="flex items-center space-x-2 border-b border-slate-800 pb-2">
+                                    <i class="fa-solid fa-bug text-emerald-400"></i>
+                                    <span class="text-white font-bold">IssueResolver AI</span>
+                                </div>
+                                <p class="text-slate-400">"Análisis automático completado: Issue #42 clasificado como bug en el módulo Auth."</p>
+                                <span class="text-emerald-400 text-[10px]">Auto-label: bug, high-priority</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Git & DevTools</span>
+                                <span class="text-xs text-slate-500"><i class="fa-brands fa-github mr-1"></i> Issue Triage</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">GitHub Issue & Bug Classifier</h3>
+                            <p class="text-slate-400 text-sm mb-4">Clasifica y etiqueta reportes de errores en GitHub automáticamente reduciendo el trabajo manual del equipo de desarrollo.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/80">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">GitHub REST API</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">FastAPI</span>
+                            <span class="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 text-[11px] font-medium">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Support / Telegram Bot -->
+                <div class="gallery-item support bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden group hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="relative overflow-hidden bg-slate-900 h-48 flex items-center justify-center p-4">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10"></div>
+                            <div class="w-full h-full bg-slate-900 border border-slate-800 rounded-xl p-4 font-sans text-xs text-slate-200 flex flex-col justify-between shadow-inner">
+                                <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+                                    <span class="font-bold text-sky-400"><i class="fa-brands fa-telegram text-sm mr-1"></i> CommunityBot</span>
+                                    <span class="text-[10px] text-slate-400">En línea</span>
+                                </div>
+                                <div class="bg-sky-950/40 p-2 rounded border border-sky-500/20 text-slate-300">
+                                    "¡Hola! Te damos la bienvenida a la comunidad. Revisa las reglas aquí..."
+                                </div>
+                                <span class="text-xs text-slate-400 font-mono">Modera +20k miembros</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-bold text-sky-400 uppercase tracking-wider">Soporte Comunidad</span>
+                                <span class="text-xs text-slate-500"><i class="fa-brands fa-telegram mr-1"></i> Telegram API</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Telegram Community Moderation Bot</h3>
+                            <p class="text-slate-400 text-sm mb-4">Modera grupos masivos de Telegram, elimina spam, responde dudas recurrentes y realiza sorteos automatizados.</p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-0">
+                        <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800/80">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">Telegram Bot API</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-[11px] font-medium">Node.js</span>
+                            <span class="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 text-[11px] font-medium">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing Section -->
-    <section id="pricing" class="py-24 relative">
+    <section id="pricing" class="py-24 relative bg-slate-950/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Planes Transparentes</h2>
@@ -243,7 +467,7 @@
 
                         <ul class="space-y-4 text-sm text-slate-300 mb-8">
                             <li class="flex items-center"><i class="fa-solid fa-check text-indigo-400 mr-3"></i> Hasta 1,000 conversaciones/mes</li>
-                            <li class="flex items-center"><li class="flex items-center"><i class="fa-solid fa-check text-indigo-400 mr-3"></i> Integración Web básica</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check text-indigo-400 mr-3"></i> Integración Web básica</li>
                             <li class="flex items-center"><i class="fa-solid fa-check text-indigo-400 mr-3"></i> Modelo IA Estándar</li>
                             <li class="flex items-center text-slate-500"><i class="fa-solid fa-xmark mr-3 text-slate-600"></i> Integración con Git & GitHub</li>
                             <li class="flex items-center text-slate-500"><i class="fa-solid fa-xmark mr-3 text-slate-600"></i> Soporte Prioritario 24/7</li>
@@ -413,6 +637,32 @@
                 monthlyPrices.forEach(el => el.classList.remove('hidden'));
                 annualPrices.forEach(el => el.classList.add('hidden'));
             }
+        });
+
+        // Gallery Filters Logic
+        const filterBtns = document.querySelectorAll('.gallery-filter');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update button styles
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-500/20');
+                    b.classList.add('bg-slate-800', 'text-slate-300');
+                });
+                btn.classList.remove('bg-slate-800', 'text-slate-300');
+                btn.classList.add('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-500/20');
+
+                // Filter items
+                const filterValue = btn.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
         });
     </script>
 </body>
